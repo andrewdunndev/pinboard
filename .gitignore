@@ -1,0 +1,19 @@
+# Input assets (large binary files — see README.md for input structure)
+input/photos/
+input/background/*.png
+input/audio/
+
+# Generated output
+output/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# macOS
+.DS_Store
+
+# Build directory
+build/

@@ -1,0 +1,22 @@
+[project]
+name = "pinboard"
+version = "1.0.0"
+description = "Ken Burns-style video generator that composites photos as vintage Polaroids on panoramic backgrounds"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "Pillow",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM"]
+ignore = [
+    "E501",   # line length handled by formatter
+    "SIM108", # ternary can reduce readability in this codebase
+]
