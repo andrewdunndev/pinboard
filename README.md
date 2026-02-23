@@ -115,6 +115,10 @@ pip install numpy Pillow
 brew install ffmpeg   # or your system's package manager
 ```
 
+## Development
+
+This project is developed on [GitLab](https://gitlab.com/dunn.dev/pinboard), where issues, merge requests, and CI/CD live. It's mirrored to [GitHub](https://github.com/andrewdunndev/pinboard) for discoverability — if you're solving a similar problem or want to discuss approaches, please reach out!
+
 ## License
 
 MIT
