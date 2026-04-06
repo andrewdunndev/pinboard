@@ -1,0 +1,105 @@
+<svg viewBox="0 0 1200 430" xmlns="http://www.w3.org/2000/svg">
+  <rect x="0" y="0" width="1200" height="430" fill="#faf6ed" stroke="#2c2417" stroke-width="3"/>
+
+  <rect x="0" y="0" width="1200" height="36" fill="#2c2417"/>
+  <text x="16" y="24" font-family="'IBM Plex Mono', monospace" font-size="14" fill="#faf6ed" font-weight="bold">pinboard -- Ken Burns video from photos</text>
+  <text x="1184" y="24" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#c4b99a" text-anchor="end">photos + panorama + music = 4K video</text>
+
+  <!-- Left: Input -->
+  <rect x="40" y="60" width="240" height="280" fill="none" stroke="#c4b99a" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="160" y="82" font-family="'IBM Plex Mono', monospace" font-size="10" fill="#6b5d4f" text-anchor="middle" font-weight="bold">INPUT</text>
+
+  <rect x="56" y="100" width="208" height="28" fill="none" stroke="#2c2417" stroke-width="1.5"/>
+  <text x="160" y="118" font-family="'IBM Plex Mono', monospace" font-size="10" fill="#2c2417" text-anchor="middle">input/photos/</text>
+
+  <rect x="56" y="140" width="208" height="28" fill="none" stroke="#2c2417" stroke-width="1.5"/>
+  <text x="160" y="158" font-family="'IBM Plex Mono', monospace" font-size="10" fill="#2c2417" text-anchor="middle">input/background/</text>
+  <text x="160" y="178" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#6b5d4f" text-anchor="middle">panoramic, 8K+</text>
+
+  <rect x="56" y="196" width="208" height="28" fill="none" stroke="#2c2417" stroke-width="1.5"/>
+  <text x="160" y="214" font-family="'IBM Plex Mono', monospace" font-size="10" fill="#2c2417" text-anchor="middle">input/audio/</text>
+  <text x="160" y="234" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#6b5d4f" text-anchor="middle">up to 3 tracks + crossfade</text>
+
+  <text x="160" y="268" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#6b5d4f" text-anchor="middle">auto portrait/landscape</text>
+  <text x="160" y="284" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#6b5d4f" text-anchor="middle">EXIF orientation</text>
+  <text x="160" y="300" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#6b5d4f" text-anchor="middle">two-background mode</text>
+
+  <!-- Arrow -->
+  <line x1="280" y1="200" x2="350" y2="200" stroke="#2c2417" stroke-width="1.5"/>
+  <polygon points="350,195 360,200 350,205" fill="#2c2417"/>
+
+  <!-- Center: Pipeline stages -->
+  <rect x="360" y="60" width="380" height="280" fill="none" stroke="#2c2417" stroke-width="2"/>
+  <rect x="360" y="60" width="380" height="28" fill="#2c2417"/>
+  <text x="550" y="78" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#faf6ed" text-anchor="middle" font-weight="bold">PIPELINE</text>
+
+  <text x="376" y="108" font-family="'IBM Plex Mono', monospace" font-size="10" fill="#2c2417" font-weight="bold">1. layout</text>
+  <text x="376" y="124" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#6b5d4f">   Poisson disk sampling + force relaxation</text>
+
+  <text x="376" y="148" font-family="'IBM Plex Mono', monospace" font-size="10" fill="#2c2417" font-weight="bold">2. weathering</text>
+  <text x="376" y="164" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#6b5d4f">   desaturation, sepia, vignette, paper texture</text>
+
+  <text x="376" y="188" font-family="'IBM Plex Mono', monospace" font-size="10" fill="#2c2417" font-weight="bold">3. composite</text>
+  <text x="376" y="204" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#6b5d4f">   Polaroid frames, rotation, paste onto panorama</text>
+
+  <text x="376" y="228" font-family="'IBM Plex Mono', monospace" font-size="10" fill="#2c2417" font-weight="bold">4. camera path</text>
+  <text x="376" y="244" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#6b5d4f">   wide shot -> zoom in -> zig-zag meander -> zoom out</text>
+  <text x="376" y="260" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#6b5d4f">   cosine easing, loiter at waypoints</text>
+
+  <text x="376" y="284" font-family="'IBM Plex Mono', monospace" font-size="10" fill="#2c2417" font-weight="bold">5. render</text>
+  <text x="376" y="300" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#6b5d4f">   frame-by-frame piped to ffmpeg</text>
+  <text x="376" y="316" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#6b5d4f">   audio crossfade + end title card</text>
+
+  <!-- Arrow -->
+  <line x1="740" y1="200" x2="800" y2="200" stroke="#2c2417" stroke-width="1.5"/>
+  <polygon points="800,195 810,200 800,205" fill="#2c2417"/>
+
+  <!-- Right: Output visualization -->
+  <rect x="810" y="60" width="350" height="280" fill="none" stroke="#2c2417" stroke-width="2"/>
+  <rect x="810" y="60" width="350" height="28" fill="#2c2417"/>
+  <text x="985" y="78" font-family="'IBM Plex Mono', monospace" font-size="11" fill="#faf6ed" text-anchor="middle" font-weight="bold">OUTPUT</text>
+
+  <!-- Mini panorama with polaroids -->
+  <rect x="840" y="100" width="290" height="120" fill="none" stroke="#c4b99a" stroke-width="1.5"/>
+  <!-- Horizon line -->
+  <line x1="840" y1="170" x2="1130" y2="170" stroke="#c4b99a" stroke-width="0.8"/>
+  <!-- Mini polaroids scattered -->
+  <g transform="translate(870, 120) rotate(-5)">
+    <rect x="0" y="0" width="30" height="36" fill="#faf6ed" stroke="#2c2417" stroke-width="1.5"/>
+    <rect x="3" y="3" width="24" height="24" fill="none" stroke="#6b5d4f" stroke-width="0.8"/>
+  </g>
+  <g transform="translate(930, 115) rotate(3)">
+    <rect x="0" y="0" width="30" height="36" fill="#faf6ed" stroke="#2c2417" stroke-width="1.5"/>
+    <rect x="3" y="3" width="24" height="24" fill="none" stroke="#6b5d4f" stroke-width="0.8"/>
+  </g>
+  <g transform="translate(990, 125) rotate(-7)">
+    <rect x="0" y="0" width="30" height="36" fill="#faf6ed" stroke="#2c2417" stroke-width="1.5"/>
+    <rect x="3" y="3" width="24" height="24" fill="none" stroke="#6b5d4f" stroke-width="0.8"/>
+  </g>
+  <g transform="translate(1050, 118) rotate(4)">
+    <rect x="0" y="0" width="30" height="36" fill="#faf6ed" stroke="#2c2417" stroke-width="1.5"/>
+    <rect x="3" y="3" width="24" height="24" fill="none" stroke="#6b5d4f" stroke-width="0.8"/>
+  </g>
+  <!-- Camera path arrow -->
+  <path d="M860 190 Q920 180 960 195 Q1000 210 1060 185 Q1100 170 1120 190" fill="none" stroke="#2c2417" stroke-width="2" stroke-dasharray="5,3"/>
+  <polygon points="1116,186 1124,190 1118,196" fill="#2c2417"/>
+
+  <text x="985" y="242" font-family="'IBM Plex Mono', monospace" font-size="10" fill="#2c2417" text-anchor="middle" font-weight="bold">output/pinboard.mp4</text>
+  <text x="985" y="262" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#6b5d4f" text-anchor="middle">4K, vintage Polaroid aesthetic</text>
+
+  <line x1="840" y1="276" x2="1130" y2="276" stroke="#c4b99a" stroke-width="1"/>
+  <text x="840" y="296" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#6b5d4f">make render    full pipeline</text>
+  <text x="840" y="312" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#6b5d4f">make test      120s test clip</text>
+  <text x="840" y="328" font-family="'IBM Plex Mono', monospace" font-size="9" fill="#6b5d4f">make composite preview placement</text>
+
+  <!-- Footer -->
+  <line x1="40" y1="360" x2="1160" y2="360" stroke="#c4b99a" stroke-width="1"/>
+  <text x="600" y="380" font-family="'IBM Plex Mono', monospace" font-size="10" fill="#6b5d4f" text-anchor="middle">drop photos + panorama + music -- get a 4K Ken Burns video back</text>
+  <text x="590" y="408" text-anchor="middle" fill="#2c2417" font-family="'IBM Plex Mono', monospace" font-size="9" font-weight="600">Built with GitLab</text>
+  <g transform="translate(634, 397) scale(0.045)">
+    <path d="M282.83,170.73l-.27-.69-26.14-68.22a6.81,6.81,0,0,0-2.69-3.24,7,7,0,0,0-8,.43,7,7,0,0,0-2.32,3.52l-17.65,54H154.29l-17.65-54A6.86,6.86,0,0,0,134.32,99a7,7,0,0,0-8-.43,6.87,6.87,0,0,0-2.69,3.24L97.44,170l-.26.69a48.54,48.54,0,0,0,16.1,56.1l.09.07.24.17,39.82,29.82,19.7,14.91,12,9.06a8.07,8.07,0,0,0,9.76,0l12-9.06,19.7-14.91,40.06-30,.1-.08A48.56,48.56,0,0,0,282.83,170.73Z" fill="#E24329"/>
+    <path d="M282.83,170.73l-.27-.69a88.3,88.3,0,0,0-35.15,15.8L190,229.25c19.55,14.79,36.57,27.64,36.57,27.64l40.06-30,.1-.08A48.56,48.56,0,0,0,282.83,170.73Z" fill="#FC6D26"/>
+    <path d="M153.43,256.89l19.7,14.91,12,9.06a8.07,8.07,0,0,0,9.76,0l12-9.06,19.7-14.91S209.55,244,190,229.25C170.45,244,153.43,256.89,153.43,256.89Z" fill="#FCA326"/>
+    <path d="M132.58,185.84A88.19,88.19,0,0,0,97.44,170l-.26.69a48.54,48.54,0,0,0,16.1,56.1l.09.07.24.17,39.82,29.82s17-12.85,36.57-27.64Z" fill="#FC6D26"/>
+  </g>
+</svg>
