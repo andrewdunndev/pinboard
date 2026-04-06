@@ -1,0 +1,29 @@
+<svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" font-family="'Courier New', monospace">
+  <rect x="0" y="0" width="256" height="256" fill="#faf6ed"/>
+  <rect x="20" y="20" width="216" height="216" fill="none" stroke="#2c2417" stroke-width="4"/>
+  <rect x="28" y="28" width="200" height="36" fill="#2c2417"/>
+  <text x="128" y="53" text-anchor="middle" font-size="16" fill="#faf6ed" font-weight="bold">pinboard</text>
+  <!-- Polaroid photos pinned to a board (Ken Burns compositor) -->
+  <!-- Background panorama -->
+  <rect x="50" y="85" width="156" height="90" fill="none" stroke="#c4b99a" stroke-width="1.5"/>
+  <line x1="50" y1="140" x2="100" y2="120" stroke="#c4b99a" stroke-width="1"/>
+  <line x1="100" y1="120" x2="150" y2="135" stroke="#c4b99a" stroke-width="1"/>
+  <line x1="150" y1="135" x2="206" y2="110" stroke="#c4b99a" stroke-width="1"/>
+  <!-- Polaroid 1 (tilted) -->
+  <g transform="translate(70, 100) rotate(-8)">
+    <rect x="0" y="0" width="44" height="52" fill="#faf6ed" stroke="#2c2417" stroke-width="2"/>
+    <rect x="5" y="5" width="34" height="34" fill="none" stroke="#6b5d4f" stroke-width="1"/>
+  </g>
+  <!-- Polaroid 2 (tilted other way) -->
+  <g transform="translate(120, 95) rotate(5)">
+    <rect x="0" y="0" width="44" height="52" fill="#faf6ed" stroke="#2c2417" stroke-width="2"/>
+    <rect x="5" y="5" width="34" height="34" fill="none" stroke="#6b5d4f" stroke-width="1"/>
+  </g>
+  <!-- Push pins -->
+  <circle cx="92" cy="105" r="4" fill="#2c2417"/>
+  <circle cx="142" cy="100" r="4" fill="#2c2417"/>
+  <!-- Motion arrow (Ken Burns) -->
+  <line x1="80" y1="190" x2="170" y2="190" stroke="#2c2417" stroke-width="2"/>
+  <polygon points="170,186 180,190 170,194" fill="#2c2417"/>
+  <line x1="60" y1="228" x2="196" y2="228" stroke="#c4b99a" stroke-width="2"/>
+</svg>
