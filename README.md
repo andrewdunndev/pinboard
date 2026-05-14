@@ -1,3 +1,5 @@
+![hero](hero.svg)
+
 # Pinboard
 
 Ken Burns-style video generator that composites photos as vintage Polaroids on

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="pinboard: a polaroid pinned to a panoramic backdrop.">
+  <g stroke="#4a6741" fill="none" stroke-linecap="round">
+    <!-- panoramic backdrop -->
+    <rect x="6"  y="14" width="52" height="36" stroke-width="1.4" rx="1.5"/>
+    <!-- polaroid 1 (rotated slightly, behind) -->
+    <rect x="20" y="20" width="20" height="22" stroke-width="1.6" rx="1" transform="rotate(-6 30 31)"/>
+    <!-- polaroid 2 (in front, opposite rotation) -->
+    <rect x="28" y="22" width="20" height="22" stroke-width="1.6" rx="1" transform="rotate(5 38 33)"/>
+  </g>
+  <!-- pin dots -->
+  <circle cx="30" cy="22" r="1.8" fill="#4a6741"/>
+  <circle cx="40" cy="24" r="1.8" fill="#4a6741"/>
+</svg>
