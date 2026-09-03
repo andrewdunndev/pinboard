@@ -7,7 +7,6 @@
     pinboard has no HTML surface. The deliverable is a 4K video
     composited from photos via Python + ffmpeg. No global.css to
     declare token imports in.
-  expires: 2099-01-01
   owner: andrew@dunn.dev
 
 - standard: design-system
@@ -15,7 +14,6 @@
   reason: |
     Same root cause as the global.css deviation above. pinboard is
     a Python project (pyproject.toml), not an Astro consumer.
-  expires: 2099-01-01
   owner: andrew@dunn.dev
 
 - standard: pipeline
@@ -24,7 +22,6 @@
     pinboard has no CI — iteration is local on the operator's
     machine, building a 4K video from a personal photo set. The
     output is not something shared CI should be building.
-  expires: 2099-01-01
   owner: andrew@dunn.dev
 
 - standard: pipeline
@@ -32,5 +29,4 @@
   reason: |
     Same root cause as the file-exists deviation above. There is
     no .gitlab-ci.yml to inspect.
-  expires: 2099-01-01
   owner: andrew@dunn.dev
